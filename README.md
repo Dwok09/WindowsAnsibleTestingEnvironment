@@ -8,7 +8,7 @@
 
 1. Run `setup.ps1` via admin PowerShell
 
-2. Setup VM or import the provided OVA file. If setting up your own VM be sure to edit the ansible credentials in inventory.ini. Steps to import the OVA are outlined below.
+2. Setup VM or import the provided OVA file. If setting up your own VM be sure to edit the ansible credentials in inventory.ini. Steps to import the OVA are outlined below
 > [!TIP]
 >The following steps are optional. The OVA is a 20GB file and takes a long time to download, but is provided for convenience. You can also create your own Windows 11 vm. Just be sure your VM allows connections from your docker container over port 5985.
 
