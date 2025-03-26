@@ -1,6 +1,7 @@
 ---
 - name: Create Directory
   hosts: windows
+  gather_facts: false
   tasks:
     - name: Create temp directory
       ansible.windows.win_file:
@@ -9,6 +10,7 @@
 
 - name: Place test.txt on Windows desktop
   hosts: windows
+  gather_facts: false
   tasks:
     - name: Create test.txt on desktop
       ansible.windows.win_copy:

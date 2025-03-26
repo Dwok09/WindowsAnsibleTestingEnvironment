@@ -9,4 +9,3 @@ RUN dnf install -y ansible iputils python3-pip && \
 
 COPY inventory.ini /ansible/inventory.ini
 COPY playbooks/ /ansible/playbooks/
-COPY roles/ /ansible/roles/

@@ -1,0 +1,6 @@
+---
+- name: Run Windows demo role
+  hosts: windows
+
+  roles:
+    - windows_demo_role

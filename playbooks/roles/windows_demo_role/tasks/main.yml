@@ -1,0 +1,10 @@
+---
+- name: Create directory if it doesn't exist
+  ansible.windows.win_file:
+    path: "{{ demo_directory }}"
+    state: directory
+
+- name: Create test file
+  ansible.windows.win_copy:
+    content: "This is a test file created by Ansible on {{ ansible_date_time.date }}\n"
+    dest: "{{ demo_directory }}\\testfile.txt"
